@@ -1,0 +1,15 @@
+.app {
+  display: block;
+
+  &-item {
+    display: table;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(#000, .2);
+    border-radius: 4px;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

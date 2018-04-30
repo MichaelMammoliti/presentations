@@ -1,0 +1,39 @@
+.file-list-item {
+  display: block;
+
+  &--name,
+  &--icon {
+    display: block;
+  }
+
+  &--name {
+    padding-right: 20px;
+  }
+
+  &--icon i {
+    display: block;
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}
+
+.file-list-item {
+  &.status-done & {
+    &--icon i {
+      background: green;
+    }
+  }
+  &.status-converting & {
+    &--icon i {
+      background: red;
+    }
+  }
+}
+
+.file-list-item {
+  &--icon i {
+    transition-property: background;
+  }
+}

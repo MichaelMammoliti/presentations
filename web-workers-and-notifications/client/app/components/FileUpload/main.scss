@@ -1,0 +1,21 @@
+.file-upload {
+  &--body,
+  &--item,
+  &--header {
+    display: block;
+  }
+
+  >* {
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+
+  &--item {
+
+  }
+}

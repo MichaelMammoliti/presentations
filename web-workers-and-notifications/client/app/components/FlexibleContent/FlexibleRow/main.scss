@@ -1,0 +1,51 @@
+.flexible-row {
+  display: flex;
+
+  &-item--left {
+    flex: 0 0 auto;
+    order: 1;
+  }
+
+  &-item--center {
+    flex: 1 1 auto;
+    order: 2;
+  }
+
+  &-item--right {
+    flex: 0 0 auto;
+    order: 3;
+  }
+}
+
+// Variants
+// ====================================
+.flexible-row {
+  &.inline {
+    display: inline-flex;
+  }
+
+  &.center-vertical {
+    align-items: center;
+  }
+
+  &.center-horizontal {
+    justify-content: center;
+  }
+
+  &.center-both {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.align-top {
+    align-items: flex-start;
+  }
+
+  &.align-bottom {
+    align-items: flex-end;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+}
